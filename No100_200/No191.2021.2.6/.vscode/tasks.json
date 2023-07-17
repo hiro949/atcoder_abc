@@ -1,0 +1,33 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "build",
+            "command": "g++",
+            "options": {
+                "shell": {
+                    "executable": "C:\\Windows\\System32\\wsl.exe",
+                }
+            },
+            "args": [
+                "-std=gnu++1y",
+                "-I",
+                "/mnt/c/include",
+                "-g",
+                "-o",
+                "`wslpath",
+                "'${fileDirname}\\${fileBasenameNoExtension}.exe'`",
+                "`wslpath",
+                "'${file}'`",
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

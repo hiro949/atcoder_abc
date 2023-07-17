@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "wsl",
+            "includePath": [
+                "/mnt/c/Users/hiro1/ntk/ac-library/**",
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:/Strawberry/c/bin/g++.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-x64"
+        }
+    ],
+    "version": 4
+}
